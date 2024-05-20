@@ -1,0 +1,15 @@
+name: First workflow
+
+on: workflow_dispatch # manually triggers workflow (event)
+
+jobs: # should be so (reserved) and then indentation is important, as indented items belong to this field
+  first-job: # just name (can be anything)
+    runs-on: ubuntu-latest # specifying OS
+    steps: 
+      - name: Print greeting
+        run: echo "Hello App!"
+      - name: Pring goodbye
+        run: echo "Done - Bye"
+        
+      
+
